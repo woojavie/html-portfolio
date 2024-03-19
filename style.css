@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 16px;
+    height:100vh;
+    background: #ffc0cb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./honey\ elements.png);
+    background-size: 100px;
+    
+}
+
+.valentines_card {
+    position: relative;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform: perspective(2500px);
+    transition: 4s;
+}
+
+.front_img {
+    width: 400px;
+    margin-right: -50px;
+    margin-left: -50px; 
+    margin-top: 100px;
+    position: relative; 
+    border-radius: 10%;
+    border:black solid 3px
+}
+
+.inside_img {
+    width: 350px;
+    margin-right: -50px;
+    margin-left: -50px; 
+    margin-top: 100px;
+    margin-bottom: 50px;
+    position: relative; 
+    border: black solid 3px;
+    border-radius: 10%;
+}
+
+.valentines_card:hover .front_card{
+    transform: rotateY(-160deg); 
+} 
+.valentines_card:hover .front_text {
+    display: none;
+}
+
+.front_text{
+    margin-top: 100px;
+    color: D04E02;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 50px;
+}
+.inside_text{
+    color: #D04E02;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 24px;
+}
+
+.front_card {
+    position: relative;
+    overflow: hidden;
+    transform-origin: left;
+    margin: 40px auto;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 24px 40px -8px #000000;
+    width: 450px;
+    height: 800px;
+    background-color: #E79A3F;
+}
+.inside_card {
+    position: absolute;
+    overflow: hidden;
+    transform-origin: left;
+    margin: 40px auto;
+    padding: 16px;
+    background-color: #E79A3F;
+    text-align: center;
+    box-shadow: 0 24px 40px -8px #000000;
+    width: 450px;
+    height: 800px;
+    z-index:-1;
+    left:0;
+    top:0;
+
+}
+.valentines_card audio {
+    display: none;
+}
+
+.valentines_card:hover .front_img {
+    display: none;
+}
+.inside_card audio {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 40px;
+}
+
+  
+
+ 
+
+  
